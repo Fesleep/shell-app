@@ -1,3 +1,6 @@
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const cors = require("cors");
 import {
   AngularNodeAppEngine,
   createNodeRequestHandler,
@@ -10,6 +13,8 @@ import { join } from 'node:path';
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
 const app = express();
+	app.use(cors());
+  app.set('view engine', 'html');
 const angularApp = new AngularNodeAppEngine();
 
 /**
@@ -60,8 +65,8 @@ if (isMainModule(import.meta.url) || process.env['pm_id']) {
 
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
-}
 
+}
 /**
  * Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.
  */
