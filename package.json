@@ -13,6 +13,7 @@
   "private": true,
   "packageManager": "npm@10.9.4",
   "dependencies": {
+    "@farm/ui-design-system": "file:../ui-design-system",
     "@angular/animations": "^21.2.0",
     "@angular/common": "^21.2.0",
     "@angular/compiler": "^21.2.0",
@@ -21,6 +22,8 @@
     "@angular/platform-browser": "^21.2.0",
     "@angular/platform-server": "^21.2.0",
     "@angular/router": "^21.2.0",
+    "@ngx-translate/core": "^16.0.0",
+    "@ngx-translate/http-loader": "^16.0.0",
     "@softarc/native-federation-node": "^3.3.4",
     "cors": "^2.8.5",
     "es-module-shims": "^1.5.12",

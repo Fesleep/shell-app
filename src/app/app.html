@@ -1,1 +1,33 @@
-<router-outlet />
+<div class="app-layout">
+  <header class="app-header">
+    <nav class="app-nav">
+      <ui-button variant="outline" (pressed)="navigateToContact()">
+        {{ 'shell.nav.contact' | translate }}
+      </ui-button>
+      <ui-button variant="outline" (pressed)="navigateToDashboard()">
+        {{ 'shell.nav.dashboard' | translate }}
+      </ui-button>
+    </nav>
+  </header>
+
+  <main class="app-main">
+    @if (isHomePage()) {
+      <div class="app-welcome">
+        <p class="app-welcome__title">{{ 'shell.welcome.title' | translate }}</p>
+        <p class="app-welcome__hint">{{ 'shell.welcome.hint' | translate }}</p>
+      </div>
+    }
+    <router-outlet />
+  </main>
+
+  <footer class="app-footer">
+    <ui-stack direction="row" gap="lg" justify="center" align="center">
+      <ui-button variant="ghost" size="sm" (pressed)="changeLanguage()">
+        {{ 'shell.btn.language' | translate }}
+      </ui-button>
+      <ui-button variant="ghost" size="sm" (pressed)="changeTheme()">
+        {{ 'shell.btn.theme' | translate }}
+      </ui-button>
+    </ui-stack>
+  </footer>
+</div>
