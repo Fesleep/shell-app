@@ -1,0 +1,44 @@
+{
+  "shell": {
+    "nav": {
+      "contact": "Contato",
+      "dashboard": "Painel"
+    },
+    "welcome": {
+      "title": "Bem-vindo",
+      "hint": "Escolha uma página acima para começar."
+    },
+    "btn": {
+      "language": "Switch to English",
+      "theme": "Mudar tema"
+    }
+  },
+  "dashboard": {
+    "title": "Painel",
+    "subtitle": "Uma visão rápida das principais métricas do seu app.",
+    "refresh": "Atualizar dados",
+    "activeUsers": "Usuários ativos",
+    "newSignups": "Novos cadastros",
+    "conversionRate": "Taxa de conversão",
+    "recentActivity": "Atividade recente",
+    "hint24h": "Últimas 24 horas (placeholder).",
+    "hintToday": "Hoje (placeholder).",
+    "hintSample": "Métrica de exemplo apenas para layout.",
+    "hintCharts": "Esta área pode exibir gráficos, tabelas ou logs. Por enquanto, é apenas um placeholder para ajudar no layout."
+  },
+  "contact": {
+    "title": "Fale conosco",
+    "intro": "Tem uma dúvida, sugestão ou quer só dizer olá? Preencha o formulário abaixo e responderemos o mais rápido possível.",
+    "name": "Nome",
+    "namePlaceholder": "Seu nome completo",
+    "email": "E-mail",
+    "emailPlaceholder": "voce@exemplo.com",
+    "subject": "Assunto",
+    "subjectPlaceholder": "Como podemos ajudar?",
+    "message": "Mensagem",
+    "messagePlaceholder": "Conte um pouco mais sobre o que você precisa...",
+    "send": "Enviar mensagem",
+    "otherWays": "Outras formas de contato",
+    "emailLabel": "E-mail:"
+  }
+}
