@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+      - feature/deploy-triggers
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -17,4 +19,6 @@ jobs:
       aws_region: ${{ vars.AWS_REGION }}
       app_name: ${{ vars.APP_NAME }}
       role_arn: ${{ vars.ROLE_ARN }}
+      contact_remote_url: ${{ vars.CONTACT_REMOTE_URL }}
+      dashboard_remote_url: ${{ vars.DASHBOARD_REMOTE_URL }}
     secrets: inherit
